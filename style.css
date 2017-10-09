@@ -243,6 +243,21 @@ html,body{
     padding: 0;
     
 }
+
+/*
+.quick-facts-bullets .bullet-info{
+    font-family: 'Yantramanav', sans-serif;
+    color: #95989A; 
+    font-weight: bold;
+    font-size: 20px;
+}
+.quick-facts-bullets .bullet-info ul li{
+    list-style: none;
+    
+    
+}
+*/
+
 .quick-facts-bullets{
     background-image: url(imgs/PearlBullets.jpg);
     background-position: center center;
@@ -252,6 +267,10 @@ html,body{
     width: 100%; 
     margin-bottom: 20px;
     
+}
+.quick-facts-bullets ul li{
+    list-style: none;
+    margin-bottom: 115px;
 }
 
 .quick-facts-bullets .bullet-info .left-side{
@@ -275,12 +294,7 @@ html,body{
     width: 40%;
     float: right;
     margin: 30px 0 0 0px;
-    /*
-    top: -630px;
-    left: 673px;
-     for left side
-    */
-    
+  
 }
 .quick-facts-bullets .bullet-info .right-side .off{
     position: relative;
@@ -301,6 +315,7 @@ html,body{
     
 }
 
+/*CHAPTER HISTORY*/
 .chapter-info{
     background-image: url(imgs/ChapterHistoryBody.png);
     background-position: center center;
@@ -341,7 +356,7 @@ html,body{
     text-align: justify;
      text-indent: 50px;  
 }
-
+/*END OF CHAPTER HISTORY*/
 
 /*FOOTER*/
 
@@ -407,6 +422,7 @@ form{
 	font-size: 30px;
 	font-weight: 400;
 }
+
 
 #contact h4 {
 	margin:5px 0 15px;
@@ -481,6 +497,75 @@ fieldset {
 }
 
 /*END OF CONTACT FORM*/
+
+/*GALLERY*/
+#gallery-header h1{
+    font-size: 180px;
+}
+
+#gallery-header h2{
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+
+#gallery-header i{
+    font-size: 90px;
+    margin: 0 60px 0;
+    color: #954E6F;
+}
+
+#gallery-header i:hover{
+    color: #CDCCCD;
+}
+
+#gallery-header .left{
+    margin: 0 0 0 400px;;
+   float: left;
+    
+}
+#gallery-header .right{
+   float: right;
+    margin: 0 400px 0 0;
+    
+}
+
+/*END OF GALLERY*/
+
+
+
+
+
+#youtube-body{
+    background-image: url(imgs/ltaYoutubeBurg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+     font-family: 'Yantramanav', sans-serif;
+    color: #954E6F;
+    text-align: center; 
+    width: 100%;
+}
+
+#youtube-body h1{
+    font-size: 200px;
+}
+
+/*
+#gallery-body #right img{
+    width: 650px;
+    float: right;
+ 
+}
+
+#gallery-body #left img{
+    width: 650px;
+    float: left;
+ 
+}
+*/
+/* END OF GALLERY*/
+
 
 /*MOBILE*/
 
@@ -572,22 +657,23 @@ fieldset {
     @media(max-width:769px){
         
     #National-History-header h1{
-    font-size: 80px;
+    font-size: 60px;
     letter-spacing: -5px;
-    margin-top: 145px;
+    margin-top: 150px;
     width: 100%;
+    
         }
     
     #national-history{
         background: white;
         
         }
-    #national-history h1{
+    #national-history .container h1{
         text-indent: 0px;
-        font-size: 90px;
-        margin: 0;
+        font-size: 80px;
+        margin: 30px 0 25px 0;
         padding: 0;
-        font-weight: 800;
+        font-weight: 500;
         
         }
     #national-history h1 span{
@@ -599,32 +685,218 @@ fieldset {
         width: 100%;
         position: relative;
         text-align: justify;
-        text-indent: 50px;
+        text-indent: 0px;
         top: 0px;
         left: 0px;
+        font-size: 20px;
+        margin: 0;
+        padding: 0;
         }
     
     #founding-mothers-header{
         background: white;    
         }
-    .founding-mothers-header h1{
+        
+    #founding-mothers-text{
+        width: 100%;  
+        margin: 200px 0 0 0;
+        padding: 50px 0 0 0;
+        }
+    .founding-mothers-text h1{
         text-indent: 0px;
         font-family: 'Yantramanav', sans-serif;
-        font-size: 40px;
+        font-size: 55px;
+        text-align: center;
+        margin: 0 0 30px 0;
+        padding: 0;
+        /*
+        position: relative;
+        top: 450px;
+        */
         }
+    .founding-mothers-text h1 span{
+        color: #CDCCCD;
+       
+        }
+        
+    .founding-mothers-text .text p{
+        text-align: justify;
+        font-size: 20px;
+        margin: 0 0 30px 0;
+        padding: 0;
+        }
+        
     .founding-mothers-header h1 span{
         color:#CDCCCD;
         }
         
-    #founding-mothers-text{
-        width: 100%;  
-        margin: 170px 0 0 0;
+    #founding-mother-pics{
+        text-align: center;
         }
+   
+    #quick-facts-bullets{
+        background: white;
+        }
+        
+    #quick-facts-header h1{
+        font-size: 90px;
+        text-align: center;
+        }
+    .quick-facts-bullets .bullet-info .left-side{
+    font-family: 'Yantramanav', sans-serif;
+    color: #95989A; 
+    font-weight: bold;
+    font-size: 20px;
+    width: 100%;
+    float: none;
+    margin: 0px 0 0 0px;
+        padding: 0;
+    
+ 
+    }
+    .quick-facts-bullets .bullet-info .right-side{
+        font-family: 'Yantramanav', sans-serif;
+        color: #95989A; 
+        font-weight: bold;
+        font-size: 20px;
+        margin: 0px 0 0 0px; 
+        position: relative;
+        width: 100%;
+        float: none;
+        margin: 0px 0 0px 0px;
+        padding: 0;
+        border: 0;
+        /*  
+        top: -630px;
+        left: 673px;
+         for left side
+        */
+
+    }
+    .quick-facts-bullets .bullet-info .right-side .off{
+        position: relative;
+        top: 0px;
+        left: 0px;
+
+    }
+
+    .quick-facts-bullets .bullet-info .right-side .off2{
+        position: relative;
+        top: 0px;
+        left: 0px;
+
+    }
+    .quick-facts-bullets .bullet-info ul li{
+        list-style: circle;
+        list-style-position: inside;
+        padding: 0 0 0 0;
+        margin: 0 0 40px; 0;
+
+    }
+        .quick-facts-bullets .bullet-info ul li .odd{
+        color: #660935;
+
+    }
 
     }
     /*END OF NATIONAL HISTORY*/
     
+    /*CHAPTER HISTORY*/
+    #chapter-history-header h1{
+    font-size: 60px;
+    letter-spacing: -5px;
+    margin-top: 150px;
+    width: 100%;
+    }
     
+    .chapter-info{
+    background: white;
+     text-align: center;
+    font-family: 'Yantramanav', sans-serif;
+    color: #660935; 
+}
+
+
+.chapter-info h1{
+    text-align: center;
+    font-family: 'Yantramanav', sans-serif;
+    color: #660935; 
+    width: 100%;
+    font-size: 60px;
+    margin: 20px 0 10px 0;
+    padding: 0px 0 0 0;
+    letter-spacing: -5px;
+}
+
+.chapter-info h1 span{
+    text-align: center;
+    font-family: 'Pinyon Script', cursive;
+    color: #660935; 
+    font-size: 130px;
+    margin-left: 20px;
+    width: 100%;
+   
+}
+
+.chapter-info p.main{
+    margin:0px 0px 20px 0px;
+    font-size: 20px;
+    width: 100%;
+    text-align: justify;
+     text-indent: 30px;  
+}
+    
+    /* END OF CHAPTER HISTORY*/
+    /*CONTACT US*/
+    #contact-us-header h1{
+        font-size: 70px;
+        margin: 150px 0 0 0;
+        padding: 0;
+    }
+    
+    #contact h4{
+        text-align: justify;
+        font-size: 16px;
+    }
+    
+    /*END OF CONTACT US*/
+    
+    /*GALLERY*/
+    #gallery-header h1{
+        font-size: 80px;
+        margin-top: 30px;
+        width: 100%;
+    }
+
+    #gallery-header h2{
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+
+    #gallery-header i{
+        font-size: 90px;
+        margin: 0 60px 0;
+        color: #954E6F;
+    }
+
+    #gallery-header i:hover{
+        color: #CDCCCD;
+    }
+
+    #gallery-header .left{
+        margin: 0px 0 20px 0;
+        width: 100%;
+
+    }
+    #gallery-header .right{
+   
+        margin: 0 0 0 0;
+        width: 100%;
+    }
+
+    /*END OF GALLERY*/
+
 }
 
 
