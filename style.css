@@ -3,12 +3,26 @@
     padding: 0;
 }
 
-html,body{
-    height: 100%
+html {
+    position: relative;
+    min-height: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    /*overflow-y: scroll;*/
+}
+body {
+   
+    overflow-x: hidden;
+    margin: 0px;
+    position: relative;
+    min-height: 100%;
+    height: 100%;
 }
 #container{
-    min-height: 100%
+    min-height: 100%;
+
 }
+
 
 #main{
     overflow: auto;
@@ -48,7 +62,117 @@ html,body{
     
 }
 
+@media (max-width: 1068px) {
+     .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+                box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+        
+    }
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+        margin-left: -15px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-top: 0;
+        margin-right: 0;
+        
+    }
+    .collapse.in{
+        display:block !important;
+    }
+}
+#slider{
+    margin-top: 50px;
+    
+}
 
+.right.carousel-control, .left.carousel-control {
+    opacity: 0;
+    filter:alpha(opacity=0); /* IE support */
+}
+#slider .item{
+    height: 600px;
+}
+#slide1{
+    background-image: url(imgs/HomeHeader4.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    
+}
+
+#slide2{
+    background-image: url(imgs/HomeHeader3.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    
+}
+
+#slide3{
+    background-image: url(imgs/HomeHeader2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    
+}
+
+#slide4{
+    background-image: url(imgs/HomeHeader1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    
+}
+
+#header-title{
+    position: absolute;
+    top: 130px;
+    font-family: 'Yantramanav', sans-serif;
+    color: #954E6F;
+    text-align: center;
+    width: 100%;
+    height: 50%;
+   
+}
+#header-title h1{
+    font-size: 140px;
+    letter-spacing: -5px;
+    padding: 0 30px 0;
+    
+}
+#header-title h2{
+    margin: 0;
+    font-size: 29px;
+}
+
+#header-title h3{
+    margin: 70;
+    font-size: 15px;
+}
 
 /*HEADER*/
 .header{
@@ -56,26 +180,26 @@ html,body{
     width: 100%;
     padding: 90px 0 30px;
     margin-top: 50px;
-    background-image: url(imgs/coverUpdate.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Yantramanav', sans-serif;
     color: #954E6F;
     text-align: center;
+    
 }
 
 
 
 .header h1{
-    font-size: 160px;
+    font-size: 140px;
     letter-spacing: -5px;
-    width: 100%;
+    
 }
 
 .header h2{
      margin: 0;
-    font-size: 30px;
+    font-size: 29px;
 }
 
 .header h3{
@@ -97,8 +221,9 @@ html,body{
 }
 
 #chapter-history-header{
-    background-image: url(imgs/ChapterHistoryCover.jpg);
+    background-image: url(imgs/ChapterHistoryHeaderNew.jpg);
     background-size: cover;
+    height: 650px;
 }
 
 #chapter-history-header h1{
@@ -116,15 +241,17 @@ html,body{
 }
 /*ABOUT US*/
 .about-us{
-    background-image: url(imgs/shellWhitebackHI.jpg);
+    background-image: url(imgs/HomePageBackGround.png);
+    background-color: white;
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:cover;
     height: 710px;
     width: 100%;
      text-align: center;
     font-family: 'Yantramanav', sans-serif;
     color: #660935; 
+
 }
 
 .about-us h1{
@@ -134,7 +261,7 @@ html,body{
     width: 100%;
     font-size: 100px;
     margin: 0 0 0 0;
-    padding: 150px 0 0 0;
+    padding: 30px 0 0 0;
     letter-spacing: -5px;
 }
 
@@ -148,9 +275,10 @@ html,body{
 }
 
 .about-us p.main{
-    margin:20px 110px 0 50px;
+    margin-top: 50px;
     font-size: 20px;
-    width: 1050px;
+    width: 100%;
+    padding: 0 100px 0;
     
     
 }
@@ -158,29 +286,19 @@ html,body{
 .about-us p.second{
     font-size: 18px;
     text-transform: uppercase;
-    margin: 20px 0 0 0;
+    margin: 30px 0 0 0;
 }
 
 .about-us p.third{
     font-size: 15px;
     text-transform: uppercase;
-    margin: 20px 0 0 0;
+    margin: 30px 0 20px 0;
 }
 
 
 
 /*National History*/
-.national-history {
-    background-image: url(imgs/NatHisSec1New.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 710px;
-    width: 100%;
-    text-align: center;
-    font-family: 'Yantramanav', sans-serif;
-    color: #660935; 
-}
+
 #national-history h1{
     margin: 0;
     padding: 0;
@@ -199,78 +317,124 @@ html,body{
     left: 390px;
    
 }
-.founding-mothers-header{
-        background-image: url(imgs/Founding%20Mothers@2x.png);
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 300px;
-        width: 100%;
-        text-align: center;
-        font-family: 'Yantramanav', sans-serif;
-        color: #660935; 
-    }
-.founding-mothers-header h1{
-    text-indent: -9999px;
-}
-.founding-mothers-text {
-    font-size: 20px;
-    width: 0px;
-    margin: 10px 0 50px 50px;
-    padding: 0;
+
+#National-History-Our-History {
+    background-image: url(imgs/our-histry-header.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 24%;
+    width: 100%;
     text-align: center;
     font-family: 'Yantramanav', sans-serif;
+    color: #660935;
+    position: relative;
+    top: 30px;
+    
+    
+}
+
+#National-Our-History-Text {
+    text-align: justify;
+    font-family: 'Yantramanav', sans-serif;
     color: #660935; 
+    font-size: 22px;
+    padding: 40px 0 0 0;
+    height: 100%;
+    text-indent: inherit;
+    line-height: 45px;
+    text-indent: 50px;
+    margin-top: 30px;
+}
+
+#National-Our-History-Text p{
+    padding: 0 35px 0;
+    letter-spacing: 1px;
+    
+}
+#Founding-Mothers-Header{
+    background-image: url(imgs/Founding%20Mothers@2x.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 60%;
+    width: 100%;
+    
+}
+
+
+
+.founding-mothers-text {
+    font-size: 24px;
+    text-align: justify;
+    font-family: 'Yantramanav', sans-serif;
+    color: #660935; 
+    padding: 0 0 40px 0;
+}
+
+.founding-mothers-text p{
+    line-height: 50px;
 }
 
 .founding-mother-pics img{
     height: 312px;
-    margin: 0 0 30px 0;
+    margin: 0 0 5px 0;
+
 }
 
 .founding-mother-pics img:hover{
     height: 312px;
-    background-color: #660935 !important;
-    opacity: 0.5;
+    background-color: transparent;
+    opacity: 1.0;
+}
+
+.founding-mother-pics h1{
+    font-family: 'Yantramanav', sans-serif;
+    color: #660935;
+    font-size: 30px;
+    text-align: center;
+    padding: 0 30px 30px 0;
+    margin: auto;
+    text-transform: uppercase;
+
+}
+
+#founding-mothers-group-pic{
+     background-image: url(imgs/foundingmother.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 600px;
+    margin-bottom: 50px;
 }
 
 .quick-facts-header h1{
-    font-size: 135px;
+    font-size: 130px;
     font-weight: bold;
     font-family: 'Yantramanav', sans-serif;
     color: #660935;  
-    margin: 0 0 10px 8px;
+    margin: 0 0 40px 8px;
     padding: 0;
+    position: relative;
+    
     
 }
 
-/*
-.quick-facts-bullets .bullet-info{
-    font-family: 'Yantramanav', sans-serif;
-    color: #95989A; 
-    font-weight: bold;
-    font-size: 20px;
-}
-.quick-facts-bullets .bullet-info ul li{
-    list-style: none;
-    
-    
-}
-*/
 
-.quick-facts-bullets{
-    background-image: url(imgs/PearlBullets.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 550px;
-    width: 100%; 
-    margin-bottom: 20px;
-    
-}
 .quick-facts-bullets ul li{
-    list-style: none;
-    margin-bottom: 115px;
+  
+    font-size: 27px;
+    color: #660935;
+    list-style: none; 
+    margin: 0;
+	padding: 55px 0 70px 105px;
+	list-style: none;
+	background-image: url("imgs/pearl%20bulletpoint.png");
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 100px;
+
+    
 }
 
 .quick-facts-bullets .bullet-info .left-side{
@@ -280,7 +444,7 @@ html,body{
     font-size: 20px;
     width: 45%;
     float: left;
-    margin: 30px 0 0 50px;
+    margin: 0px 0 0 0px;
     
  
 }
@@ -293,27 +457,10 @@ html,body{
     position: relative;
     width: 40%;
     float: right;
-    margin: 30px 0 0 0px;
+    margin: 0px 0 0 0px;
   
-}
-.quick-facts-bullets .bullet-info .right-side .off{
-    position: relative;
-    top: -40px;
-    left: 0px;
-    
 }
 
-.quick-facts-bullets .bullet-info .right-side .off2{
-    position: relative;
-    top: -60px;
-    left: 0px;
-    
-}
-.quick-facts-bullets .bullet-info p{
-  
-    padding: 0 0 105px; 0;
-    
-}
 
 /*CHAPTER HISTORY*/
 .chapter-info{
@@ -336,7 +483,7 @@ html,body{
     width: 100%;
     font-size: 100px;
     margin: 20px 0 0 0;
-    padding: 140px 0 0 0;
+    padding: 40px 0 0 0;
     letter-spacing: -5px;
 }
 
@@ -355,6 +502,7 @@ html,body{
     width: 1050px;
     text-align: justify;
      text-indent: 50px;  
+    padding: 0 60px 0;
 }
 /*END OF CHAPTER HISTORY*/
 
@@ -379,8 +527,17 @@ html,body{
     font-size: 17px;
     color: #954E6F;
     position: relative;
-    left:390px;
-    top: 10px;  
+    /*padding: 0 25% 0;*/
+    top: 10px; 
+   
+    display: table;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer a{
+    color: #954E6F
 }
 
 
@@ -448,7 +605,7 @@ fieldset {
 
 #contact input[type="text"]:hover, #contact input[type="email"]:hover, #contact input[type="tel"]:hover, #contact input[type="url"]:hover, #contact textarea:hover {
 	-webkit-transition:border-color 0.3s ease-in-out;
-	-moz-transition:border-color 0.3s ease-in-out;
+	-o-transition:border-color 0.3s ease-in-out;
 	transition:border-color 0.3s ease-in-out;
 	border:1px solid #AAA;
 }
@@ -473,11 +630,12 @@ fieldset {
 #contact button[type="submit"]:hover {
 	background:#660935 ;
 	-webkit-transition:background 0.3s ease-in-out;
-	-moz-transition:background 0.3s ease-in-out;
+	-webkit-transition:background-color 0.3s ease-in-out;
+	-o-transition:background-color 0.3s ease-in-out;
 	transition:background-color 0.3s ease-in-out;
 }
 
-#contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
+#contact button[type="submit"]:active { -webkit-box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
 
 #contact input:focus, #contact textarea:focus {
 	outline:0;
@@ -498,78 +656,330 @@ fieldset {
 
 /*END OF CONTACT FORM*/
 
-/*GALLERY*/
-#gallery-header h1{
-    font-size: 180px;
-}
-
-#gallery-header h2{
-    font-size: 40px;
-    margin-bottom: 40px;
-}
 
 
-#gallery-header i{
-    font-size: 90px;
-    margin: 0 60px 0;
-    color: #954E6F;
-}
 
-#gallery-header i:hover{
-    color: #CDCCCD;
-}
-
-#gallery-header .left{
-    margin: 0 0 0 400px;;
-   float: left;
-    
-}
-#gallery-header .right{
-   float: right;
-    margin: 0 400px 0 0;
+/*VIDEOS*/
+#video-section .container{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+   
     
 }
 
-/*END OF GALLERY*/
+#video-head-title {
+    background-image: url(imgs/video-title.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 35%;
+    width: 100%;
+    text-align: center;
+    font-family: 'Yantramanav', sans-serif;
+    color: #660935;
+    position: relative;
+    padding: 20px 0 50px 0;
+    margin-top: 100px;
+    margin-bottom: 25px;
+    
+    
+}
+
+#video-section .col-lg-3.col-md-3{
+    width: 25%;
+    padding: 0;
+    margin: 0;
+}
+#video-section iframe{
+    /*width: 324px;*/
+    width: 100%;
+    height: 180px;
+    padding: 0;
+    margin:0;
+    float: left;
+   
+    -webkit-box-sizing: border-box;
+   
+            box-sizing: border-box;
+}
 
 
 
+.videos .container{
+    margin: 0 0 0 0;
+    padding: 0;
+    float: left;
+}
+.videos iframe{
+    margin-right: 90px;
+}
+
+    #video-body{
+        height: 100%;
+        
+    }
+    #video-pages ul{
+       padding-top: 120px;
+        padding-bottom: 20px;
+        margin: 0;
+    }
+   
+/*END OF VIDEOS*/
+/* END OF GALLERY*/
+
+/*SISTER PROFILE*/
+.nav-tabs {
+    margin: 100px 0 0 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+.nav-tabs>li>a {
+ color: #660935 !important;  
+}
+
+#sister-profile-tabs .container{
+    font-size: 16px;
+    color: #660935;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    
+}
+#sister-profile-tabs{
+    font-size: 16px;
+    color: #660935;
+    width: 100%;
+    
+}#sister-profile-tabs{
+    font-size: 16px;
+    color: #660935;
+    width: 100%;
+    
+}
+.line-name{
+    text-align: center;
+    padding-top: 100px;
+    
+}
+.line-pics img{
+    height: 312px;
+    width: 230px;
+    margin: 50px 0 0 0;
+    position: relative;
+    text-align: center;
+
+}
+
+.line-pics img:hover{
+    background-color: transparent;
+    opacity: 1.0;    
+}
+
+.line-pics li{
+    font-size: 17px;
+    color: #660935;
+    list-style: none; 
+    margin: 0;
+	padding: 10px 0 5px 45px;
+	list-style: none;
+	background-image: url("imgs/pearl%20bulletpoint.png");
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 40px;
+    
+    
+}
 
 
-#youtube-body{
-    background-image: url(imgs/ltaYoutubeBurg.jpg);
+
+#line9{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    
+    
+}
+
+.line-pics img:hover{
+    height: 312px;
+    background-color: #660935 !important;
+    opacity: 1.0;
+}
+
+
+.line-pics .container  div{
+    margin: 0;
+}
+
+.line-pics .container{
+   margin-bottom: 60px;
+    
+}
+#mother-pics .container h1{
+    font-size: 28px;
+    
+}
+
+.line-pics .container h1{
+    margin: 10px 0 10px 0;
+    padding: 0;
+    font-family: 'Yantramanav', sans-serif;
+    color: #660935;
+    font-size: 22px;
+    width: 100%;
+    text-transform: uppercase;
+    
+}
+
+
+
+.line-pics .container P{
+    margin: 10px 0 50px 0;
+    padding: 0;
+    font-family: 'Yantramanav', sans-serif;
+    color: #660935;
+    font-size: 18px;
+    width: 100%;   
+}
+.line-headers{
+    height: 600px;
+    width: 100%;
+    padding: 180px 0 30px;
+    margin: auto;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-     font-family: 'Yantramanav', sans-serif;
+    font-family: 'Yantramanav', sans-serif;
     color: #954E6F;
     text-align: center; 
-    width: 100%;
 }
 
-#youtube-body h1{
-    font-size: 200px;
+#line-11-header{
+    background-image: url(imgs/Line-11-Header.png);
+    margin: 0;   
+}
+.line-headers h1{
+    font-size: 20px;   
+}
+.line-headers h2{
+    font-size: 70px;   
 }
 
-/*
-#gallery-body #right img{
-    width: 650px;
-    float: right;
- 
+#line-10-header{
+    background-image: url(imgs/coverUpdate.jpg);
+    margin: 0;
+    
 }
 
-#gallery-body #left img{
-    width: 650px;
-    float: left;
- 
+#line-9-header{
+    background-image: url(imgs/Line-9-Header.jpg);
+    height: 670px;
+    
 }
-*/
-/* END OF GALLERY*/
 
+#line-8-header{
+    background-image: url(imgs/Line-8-Header.jpg);
+    height: 670px;
+    
+}
+#line-7-header{
+    background-image: url(imgs/Line-7-Header.png);
+    height: 670px;
+    
+}
+
+#line-6-header{
+    background-image: url(imgs/Line-6-Header.png);
+    height: 670px
+    
+}
+
+#line-5-header{
+    background-image: url(imgs/Line-5-Header.png);
+    height: 670px
+    
+}
+
+#line-4-header{
+    background-image: url(imgs/Line-4-Header.png);
+    height: 670px;
+    
+}
+
+#line-3-header{
+    background-image: url(imgs/Line-3-Header.png);
+    height: 670px;
+    
+}
+
+#line-2-header{
+    background-image: url(imgs/Line-2-Header.png);
+    height: 770px;
+    
+}
+
+#line-1-header{
+    background-image: url(imgs/Line-1-Header.png);
+    height: 670px;
+    
+}
+
+#founding-line-header{
+    background-image: url(imgs/Founding-Line-Header.png);
+    height: 670px;
+    
+}
+
+#founding-mothers-header{
+    background-image: url(imgs/founding-mothers-header.jpg);
+    height: 770px;
+    
+}
+
+#founding-mothers-header h2{
+    font-size: 80px;
+    margin-top: 40px;
+    
+}
+
+#founding-mothers-header h1{
+    font-size: 50px;
+    
+    
+}
+
+/*END OF SISTER PROFILE*/
 
 /*MOBILE*/
 
 @media(max-width:768px){
+    html {
+    position: relative;
+    min-height: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+body {
+   
+    overflow-x: hidden;
+    margin: 0px;
+    position: relative;
+    min-height: 100%;
+    height: auto;
+}
 .navbar-collapse a{
    margin: 0 0 0 0;
    font-size: 20px;
@@ -586,7 +996,33 @@ fieldset {
     }
 
 @media(max-width:768px){
-    .header{
+    
+    #header-title{
+    position: absolute;
+    top: 180px;
+    font-family: 'Yantramanav', sans-serif;
+    color: #954E6F;
+    text-align: center;
+    width: 100%;
+    height: 50%;
+        
+   
+}
+#header-title h1{
+    font-size: 60px;
+    letter-spacing: -5px;
+   
+    
+}
+#header-title h2{
+    margin: 0;
+    font-size: 30px;
+}
+    #header-title h3{
+    margin: 70;
+    font-size: 15px;
+}
+       .header{
     padding: 30px;
     height: 500px;
     
@@ -596,6 +1032,7 @@ fieldset {
     letter-spacing: -5px;
     margin-top: 100px;
     width: 100%;
+        
     }
 
     .header h2{
@@ -609,12 +1046,16 @@ fieldset {
     }
 }
 
+
+ 
+
+
 @media(max-width:768px){
     .about-us{
     background: white;
     padding: 10px;
     height: 100%;
-    margin-bottom: 200px;
+    margin-bottom: 0px;
         
     }
     
@@ -630,6 +1071,7 @@ fieldset {
         font-size: 20px;
         margin-left: -3px;
         width:  100%;
+        padding: 0 25px 0;
     }
     
     
@@ -637,9 +1079,8 @@ fieldset {
 
 @media(max-width:769px){
     .footer{
-        position: relative;
+       position: relative;
         bottom: 0px;
-        margin-top:300px;
         height: 100px;
         clear: both;
     }
@@ -650,154 +1091,181 @@ fieldset {
     .footer small{
         position: absolute;
         top: 60px;
-        left: 25px;
+        
         font-size: 10px;
+     display: table;
+    
     }
+    
     /*NATIONAL HISTORY*/
     @media(max-width:769px){
-        
-    #National-History-header h1{
+        #National-History-header h1{
     font-size: 60px;
     letter-spacing: -5px;
     margin-top: 150px;
     width: 100%;
+}
+        .national-history {
+    background-image: url(imgs/NatHisSec1New.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 710px;
+    width: 100%;
+    text-align: center;
+    font-family: 'Yantramanav', sans-serif;
+    color: #660935; 
+}
+#national-history h1{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-indent: -9999px;
+}
+
+
+
+#National-History-Our-History {
+    background-image: url(imgs/our-histry-header.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 54%;
+    width: 100%;
+    text-align: center;
+    font-family: 'Yantramanav', sans-serif;
+    color: #660935;
+    position: relative;
+    padding: 0 0 60px 0;
     
-        }
     
-    #national-history{
-        background: white;
-        
-        }
-    #national-history .container h1{
-        text-indent: 0px;
-        font-size: 80px;
-        margin: 30px 0 25px 0;
-        padding: 0;
-        font-weight: 500;
-        
-        }
-    #national-history h1 span{
-        color: #CDCCCD;
-        }
-        
-    #national-history .text{
-        color: #660935;
-        width: 100%;
-        position: relative;
-        text-align: justify;
-        text-indent: 0px;
-        top: 0px;
-        left: 0px;
-        font-size: 20px;
-        margin: 0;
-        padding: 0;
-        }
     
-    #founding-mothers-header{
-        background: white;    
-        }
+}
+
+#National-Our-History-Text {
+    text-align: justify;
+    font-family: 'Yantramanav', sans-serif;
+    color: #660935; 
+    font-size: 18px;
+    padding: 40px 0 20px 0;
+    height: 100%;
+    text-indent: inherit;
+    line-height: 45px;
+    text-indent: 22px;
+    
+}
+
+#National-Our-History-Text p{
+    padding: 0 20px 0;
+    
+}
         
-    #founding-mothers-text{
-        width: 100%;  
-        margin: 200px 0 0 0;
-        padding: 50px 0 0 0;
-        }
-    .founding-mothers-text h1{
-        text-indent: 0px;
-        font-family: 'Yantramanav', sans-serif;
-        font-size: 55px;
-        text-align: center;
-        margin: 0 0 30px 0;
-        padding: 0;
-        /*
-        position: relative;
-        top: 450px;
-        */
-        }
-    .founding-mothers-text h1 span{
-        color: #CDCCCD;
-       
-        }
+#Founding-Mothers-Header{
+    background-image: url(imgs/Founding%20Mothers@2x.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100%;
+    width: 100%;
+    padding: 0 0 120px 0;
+}
+
+
+.founding-mothers-text {
+    font-size: 18px;
+    text-align: justify;
+    font-family: 'Yantramanav', sans-serif;
+    color: #660935; 
+    padding: 0 0 20px 0;
+    line-height: 45px;
+    text-indent: 22px;
+}
         
-    .founding-mothers-text .text p{
-        text-align: justify;
-        font-size: 20px;
-        margin: 0 0 30px 0;
-        padding: 0;
-        }
-        
-    .founding-mothers-header h1 span{
-        color:#CDCCCD;
-        }
-        
-    #founding-mother-pics{
-        text-align: center;
-        }
-   
-    #quick-facts-bullets{
-        background: white;
-        }
-        
-    #quick-facts-header h1{
-        font-size: 90px;
-        text-align: center;
-        }
-    .quick-facts-bullets .bullet-info .left-side{
+.founding-mothers-text {
+    padding: 0 20px 0;
+}
+
+.founding-mother-pics img{
+    height: 312px;
+    margin: 0 0 30px 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+    
+
+}
+ 
+#founding-mothers-group-pic{
+     background-image: url(imgs/foundingmother.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 200px;
+    margin-bottom: 20px;
+}        
+
+.founding-mother-pics img:hover{
+    height: 312px;
+    background-color: #660935 !important;
+    opacity: 0.5;
+}
+
+.quick-facts-header h1{
+    font-size: 100px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Yantramanav', sans-serif;
+    color: #660935;  
+    margin: 0 0 10px 8px;
+    padding: 0;
+    position: relative;
+    
+    
+}
+
+
+.quick-facts-bullets ul li{
+  
+    font-size: 20px;
+    color: #660935;
+    list-style: none; 
+    margin: 0;
+	padding: 50px 0 40px 60px;
+	list-style: none;
+	background-image: url("imgs/pearl%20bulletpoint.png");
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 50px;
+
+    
+}
+
+.quick-facts-bullets .bullet-info .left-side{
     font-family: 'Yantramanav', sans-serif;
     color: #95989A; 
     font-weight: bold;
     font-size: 20px;
     width: 100%;
-    float: none;
+    
     margin: 0px 0 0 0px;
-        padding: 0;
     
  
-    }
-    .quick-facts-bullets .bullet-info .right-side{
-        font-family: 'Yantramanav', sans-serif;
-        color: #95989A; 
-        font-weight: bold;
-        font-size: 20px;
-        margin: 0px 0 0 0px; 
-        position: relative;
-        width: 100%;
-        float: none;
-        margin: 0px 0 0px 0px;
-        padding: 0;
-        border: 0;
-        /*  
-        top: -630px;
-        left: 673px;
-         for left side
-        */
+}
+.quick-facts-bullets .bullet-info .right-side{
+    font-family: 'Yantramanav', sans-serif;
+    color: #95989A; 
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0px 0 0 0px; 
+    
+    width: 100%;
+   
+    margin: 0px 0 0 0px;
+  
+}
 
-    }
-    .quick-facts-bullets .bullet-info .right-side .off{
-        position: relative;
-        top: 0px;
-        left: 0px;
-
-    }
-
-    .quick-facts-bullets .bullet-info .right-side .off2{
-        position: relative;
-        top: 0px;
-        left: 0px;
-
-    }
-    .quick-facts-bullets .bullet-info ul li{
-        list-style: circle;
-        list-style-position: inside;
-        padding: 0 0 0 0;
-        margin: 0 0 40px; 0;
-
-    }
-        .quick-facts-bullets .bullet-info ul li .odd{
-        color: #660935;
-
-    }
-
+    
     }
     /*END OF NATIONAL HISTORY*/
     
@@ -814,6 +1282,9 @@ fieldset {
      text-align: center;
     font-family: 'Yantramanav', sans-serif;
     color: #660935; 
+        width: 100%;
+        height: 100%;
+            
 }
 
 
@@ -826,6 +1297,7 @@ fieldset {
     margin: 20px 0 10px 0;
     padding: 0px 0 0 0;
     letter-spacing: -5px;
+    height: 100%
 }
 
 .chapter-info h1 span{
@@ -843,7 +1315,9 @@ fieldset {
     font-size: 20px;
     width: 100%;
     text-align: justify;
-     text-indent: 30px;  
+     text-indent: 30px; 
+    padding: 0 20px 0;
+    line-height: 50px;
 }
     
     /* END OF CHAPTER HISTORY*/
@@ -894,10 +1368,223 @@ fieldset {
         margin: 0 0 0 0;
         width: 100%;
     }
+    
+    
 
     /*END OF GALLERY*/
+    
+    /*Sister Profile Mobile*/
+    .nav-tabs {
+    margin: 100px 0 0px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    overflow-x: scroll;
+    overflow-y: hidden;
+        
+}
+.nav-tabs>li>a {
+ color: #660935 !important;  
+}
+
+#sister-profile-tabs .container{
+    font-size: 16px;
+    color: #660935;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    
+}
+#sister-profile-tabs{
+    font-size: 16px;
+    color: #660935;
+    width: 100%;
+    
+}
+.line-name{
+    text-align: center;
+    padding-top: 100px;
+    
+}
+.line-pics img{
+    height: 312px;
+    width: 230px;
+    
+    position: relative;
+    background-color: #954E6F;
+    opacity: 1.0;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+
+    
+    
+}
+
+.line-pics li{
+    font-size: 17px;
+    color: #660935;
+    list-style: none; 
+    margin: 0;
+	padding: 10px 0 5px 45px;
+	list-style: none;
+	background-image: url("imgs/pearl%20bulletpoint.png");
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 40px;
+    
+    
+}
+
+
+
+#line9{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    
+}
+
+#line-10-header{
+    
+}
+
+
+.line-pics img:hover{
+    height: 312px;
+    background-color: #660935 !important;
+    opacity: 0.5;
+}
+
+
+.line-pics .container  div{
+ margin: 0;
+}
+.line-pics .container h1{
+    margin: 10px 0 10px 0;
+    padding: 0;
+    font-family: 'Yantramanav', sans-serif;
+    color: #660935;
+    font-size: 22px;
+    width: 100%;
+    text-transform: uppercase;
+    text-align: center;
+    
+}
+
+.line-pics .container P{
+    margin: 10px 0 50px 0;
+    padding: 0;
+    font-family: 'Yantramanav', sans-serif;
+    color: #660935;
+    font-size: 18px;
+    width: 100%;   
+}
+.line-headers{
+    height: 600px;
+    width: 100%;
+    padding: 180px 0 30px;
+    margin: auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Yantramanav', sans-serif;
+    color: #954E6F;
+    text-align: center; 
+}
+
+
+    /*END of Sister Profile Mobile*/
+    
+    /*Videos Mobile*/
+    #video-section .container{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+   
+    
+}
+
+#video-head-title {
+    background-image: url(imgs/video-title.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 30%;
+    width: 100%;
+    text-align: center;
+    font-family: 'Yantramanav', sans-serif;
+    color: #660935;
+    position: relative;
+    padding: 20px 0 100px 0;
+    margin-top: 100px;
+    
+    
+    
+}
+
+#video-section .col-lg-3.col-md-3{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+#video-section iframe{
+    /*width: 324px;*/
+    width: 100%;
+    height: 180px;
+    padding: 0;
+    margin:0;
+    float: left;
+   
+    -webkit-box-sizing: border-box;
+   
+            box-sizing: border-box;
+}
+
+
+
+.videos .container{
+    margin: 0 0 0 0;
+    padding: 0;
+    float: left;
+}
+.videos iframe{
+    margin-right: 90px;
+}
+
+    #video-body{
+        height: 100%;
+        
+    }
+    #video-pages ul{
+       padding-top: 20px;
+        padding-bottom: 20px;
+        margin: 0;
+         -webkit-box-pack: center;
+             -ms-flex-pack: center;
+                 justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    }
+   
+     /*END of Videos Mobile*/
 
 }
+
+
+
+    
 
 
 
