@@ -866,6 +866,11 @@ fieldset {
     text-align: center; 
 }
 
+#line-12-header{
+    background-image: url(imgs/line12-group-pic.png);
+    margin: 0;   
+}
+
 #line-11-header{
     background-image: url(imgs/Line-11-Header.png);
     margin: 0;   
